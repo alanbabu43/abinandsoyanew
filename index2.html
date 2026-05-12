@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from duruthemes.com/demo/html/ewed/wedding/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2026 15:11:17 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary SEO -->
+    <title>The Wed Cloud | Digital Wedding Invitations & Wedding Websites</title>
+
+    <meta name="description"
+        content="The Wed Cloud creates elegant digital wedding invitations and wedding websites in Kerala. Share your love story beautifully with modern wedding designs.">
+
+    <meta name="keywords"
+        content="wedding website Kerala, digital wedding invitation, wedding invitation website, The Wed Cloud, online wedding invitation, wedding website Kochi, save the date website">
+
+    <meta name="author" content="The Wed Cloud">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://abinandsoyaa.thewedcloud.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://abinandsoyaa.thewedcloud.com/img/favicon.png" type="image/png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph / Facebook / WhatsApp / Instagram -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Wed Cloud">
+
+    <meta property="og:title"
+        content="The Wed Cloud | Digital Wedding Invitations & Wedding Websites">
+
+    <meta property="og:description"
+        content="Create beautiful wedding websites and digital invitations to share your special moments with friends and family.">
+
+    <meta property="og:url" content="https://abinandsoyaa.thewedcloud.com/">
+
+    <!-- IMPORTANT -->
+    <meta property="og:image"
+        content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
+
+    <meta property="og:image:secure_url"
+        content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
+
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="The Wed Cloud | Digital Wedding Invitations & Wedding Websites">
+
+    <meta name="twitter:description"
+        content="Create beautiful wedding websites and digital invitations to share your special moments with friends and family.">
+
+    <meta name="twitter:image"
+        content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+        .navbar {
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+
+        /* ── Hero slider: gradient shade so text is always readable ── */
+        .header.slider-fade .item.bg-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            /* dark gradient strongest at centre where text sits */
+            background: radial-gradient(ellipse at 50% 55%,
+                    rgba(44, 42, 42, 0.55) 0%,
+                    rgba(56, 54, 54, 0.25) 60%,
+                    rgba(73, 69, 69, 0.1) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Make sure caption sits above the gradient layer */
+        .header.slider-fade .item .v-middle.caption {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Text shadow on all heading / paragraph text inside the slides */
+        .header.slider-fade .item .caption h6,
+        .header.slider-fade .item .caption h1,
+        .header.slider-fade .item .caption p,
+        .header.slider-fade .item .caption .date {
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.70), 0 1px 3px rgba(0, 0, 0, 0.50);
+        }
+
+        /* ── Section Separator ── */
+        .section-separator {
+            padding: 0 0 30px 0;
+            margin-top: -40px;
+            text-align: center;
+            opacity: 0.6;
+        }
+
+        .section-separator .sep-line {
+            height: 1px;
+            width: 100px;
+            display: inline-block;
+            background: linear-gradient(to right, transparent, #c8a97e, transparent);
+            vertical-align: middle;
+        }
+
+        .section-separator i {
+            color: #c8a97e;
+            margin: 0 15px;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        /* Map link button in When & Where */
+        .map-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 7px 14px;
+            background: linear-gradient(135deg, #c8a97e, #a07850);
+            color: #fff !important;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            text-decoration: none !important;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+            box-shadow: 0 4px 14px rgba(160, 120, 80, 0.35);
+            cursor: pointer;
+        }
+
+        .map-link i {
+            font-size: 13px;
+            animation: pinBounce 1.6s ease-in-out infinite;
+        }
+
+        .map-link:hover {
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 8px 22px rgba(160, 120, 80, 0.55);
+            background: linear-gradient(135deg, #a07850, #7a5a30);
+            color: #fff !important;
+        }
+
+        @keyframes pinBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-4px);
+            }
+
+            70% {
+                transform: translateY(-2px);
+            }
+        }
+    </style>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="lds-heart">
+            <div></div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index2.html"> <img src="img/logo2.png" class="logo-img" alt=""
+                        style="width: 35%; height: 35%;"> </a>
+                <!-- <div class="logo"><h2>eWed</h2></div> -->
+            </div>
+            <!-- Button -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa-light fa-bars"></i></span> </button> -->
+            <!-- Menu -->
+            <!-- <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" data-scroll-nav="0" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home <i class="fa-light fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index-2.html" class="dropdown-item"><span>Home Image</span></a></li>
+                            <li><a href="index2.html" class="dropdown-item active"><span>Home Slider</span></a></li>
+                            <li><a href="index3.html" class="dropdown-item"><span>Home Video</span></a></li>
+                            <li><a href="index4.html" class="dropdown-item"><span>Home Slideshow</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="1">Couples</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="3">Friends</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="4">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="5">When & Where</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="6">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                </ul>
+                
+            </div> -->
+        </div>
+    </nav>
+    <!-- Slider -->
+    <header id="home" data-scroll-index="0" class="header slider-fade">
+        <div class="owl-carousel owl-theme">
+            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/39.jpeg">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-12 text-center">
+                                <h6>We are getting married!</h6>
+                                <h1>Save the date</h1>
+                                <div class="date">
+                                    <div>January</div>
+                                    <div class="space"></div>
+                                    <div class="big">10</div>
+                                    <div class="space"></div>
+                                    <div>2026</div>
+                                </div>
+                                <p>11:00 am at St. Mary's Knanaya Church<br>Mamangalam, Ernakulam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/44.2.jpeg">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-12 text-center">
+                                <h6>We are getting married!</h6>
+                                <h1>Our forever after</h1>
+                                <div class="date">
+                                    <div>January</div>
+                                    <div class="space"></div>
+                                    <div class="big">10</div>
+                                    <div class="space"></div>
+                                    <div>2026</div>
+                                </div>
+                                <p>11:00 am at St. Mary's Knanaya Church<br>Mamangalam, Ernakulam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/18.1.jpeg">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-12 text-center">
+                                <h6>We are getting married!</h6>
+                                <h1>Abin <span>&</span> Soya</h1>
+                                <div class="date">
+                                    <div>January</div>
+                                    <div class="space"></div>
+                                    <div class="big">10</div>
+                                    <div class="space"></div>
+                                    <div>2026</div>
+                                </div>
+                                <p>11:00 am at St. Mary's Knanaya Church<br>Mamangalam, Ernakulam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Couples -->
+    <section id="couples" data-scroll-index="1" class="couples section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">Hello everybody!</div>
+                    <div class="section-title">We're getting married!</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 position-relative">
+                            <div class="item">
+                                <div class="wrap">
+                                    <div class="img"> <img src="img/gallery/17.jpg" alt=""> </div>
+                                    <div class="title">
+                                        <h4>Soya Thampi</h4> <span>Bride</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- heart -->
+                            <div class="heart">
+                                <div class="float-box animation-float d-flex">
+                                    <div class="heart-icon"> <img src="img/wedding.png" alt=""> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <div class="wrap">
+                                    <div class="img"> <img src="img/gallery/16.jpg" alt=""> </div>
+                                    <div class="title">
+                                        <h4>Abin Babu</h4> <span>Groom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 text-center mt-30">
+                            <p>Today and always, beyond tomorrow, I need you beside me, always as my best friend,
+                                <span>lover and forever soul mate</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Story -->
+    <section id="story" data-scroll-index="2" class="story section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">Our Love</div>
+                    <div class="section-title">Our Story</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="item">
+                        <div class="cont">
+                            <div class="title">
+                                <h3>First time<br>we met</h3>
+                            </div>
+                            <div class="desc">
+                                <p>We met and something just clicked. It started simply — a few words, a smile — but we
+                                    both knew there was something special worth holding on to.</p>
+                            </div>
+                        </div>
+                        <div class="thumb"> <img src="img/story/story1.jpg" alt="" class="services-image img-fluid">
+                        </div>
+                        <div class="numb">2025</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="item">
+                        <div class="cont">
+                            <div class="title">
+                                <h3>Our first<br>date</h3>
+                            </div>
+                            <div class="desc">
+                                <p>We went on our first date nervous and excited, and by the end of the evening we were
+                                    sure — this was the beginning of our forever.</p>
+                            </div>
+                        </div>
+                        <div class="thumb"> <img src="img/story/story2.jpg" alt="" class="services-image img-fluid">
+                        </div>
+                        <div class="numb">2025</div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-3 col-md-12">
+                    <div class="item">
+                        <div class="cont">
+                            <div class="title">
+                                <h3>Marriage<br>proposal</h3>
+                            </div>
+                            <div class="desc">
+                                <p>Abin got down on one knee with a heart full of love. When he asked, there wasn't a moment of doubt — my answer was yes before he finished the sentence!</p>
+                            </div>
+                        </div>
+                        <div class="thumb"> <img src="img/story/story3.jpg" alt="" class="services-image img-fluid"> </div>
+                        <div class="numb">2021</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="item">
+                        <div class="cont">
+                            <div class="title">
+                                <h3>Our<br>engagement</h3>
+                            </div>
+                            <div class="desc">
+                                <p>Standing together before our loved ones and God, we exchanged rings and promised our hearts. That day, our forever officially began.</p>
+                            </div>
+                        </div>
+                        <div class="thumb"> <img src="img/story/story4.jpg" alt="" class="services-image img-fluid"> </div>
+                        <div class="numb">2025</div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Countdown -->
+    <div id="countdown" class="section-padding bg-img bg-fixed" data-overlay-dark="2"
+        data-background="img/banner/banner2.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-md-12 mb-30">
+                    <div class="section-subtitle white">We will become a family in</div>
+                    <div class="section-title white">We're getting married in</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><span id="days"></span>Days</li>
+                        <li><span id="hours"></span>Hours</li>
+                        <li><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Friends -->
+    <!-- <section id="friends" data-scroll-index="3" class="friends section-padding bg-lightbrown">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">Our best friends ever</div>
+                    <div class="section-title">Thanks for being there</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/bridesmaid1.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Eleanor Brown</h5>
+                                        <p>Bridesmaid</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/bridesmaid2.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Vanessa Dan</h5>
+                                        <p>Bridesmaid</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/bridesmaid3.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Emma Martin</h5>
+                                        <p>Bridesmaid</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/bridesmaid4.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Eleanor Brown</h5>
+                                        <p>Bridesmaid</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/groomsmen1.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Micheal Dan</h5>
+                                        <p>Groomsmen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/groomsmen2.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Dan Martin</h5>
+                                        <p>Groomsmen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/groomsmen3.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Jason Brown</h5>
+                                        <p>Groomsmen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="item hover-box mb-30">
+                                <div class="cont up">
+                                    <div class="img"> <img src="img/friends/groomsmen4.jpg" alt=""> </div>
+                                    <div class="text">
+                                        <h5>Frank Jonus</h5>
+                                        <p>Groomsmen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- When & Where -->
+    <section id="when" data-scroll-index="5" class="position-relative section-padding bg-lightbrown">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">Time and Place</div>
+                    <div class="section-title">When & Where</div>
+                </div>
+            </div>
+            <div class="row justify-content-center g-0">
+                <div class="col-12 when-where">
+                    <div class="item box-shadow-extra-large active">
+                        <div class="img"> <img src="img/whenwhere/whenwhere1.jpg" class="img-fluid" alt="" />
+                            <div class="date"><span>04</span>January</div>
+                        </div>
+                        <div class="flex-column cont">
+                            <div class="cont-hover">
+                                <div class="title">Engagement</div>
+                                <p>Mor Ignatius Knanaya Church, Kurichy, Kottayam</p>
+                                <div class="time"> <i class="fa-regular fa-clock"></i> 05:00 pm</div>
+                                <a href="https://maps.app.goo.gl/NRV3bUf3phAstGSV6" target="_blank" rel="noopener"
+                                    class="map-link">
+                                    <i class="fa-solid fa-location-dot"></i> View on Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item box-shadow-extra-large">
+                        <div class="img"> <img src="img/whenwhere/whenwhere2.jpg" class="img-fluid" alt="" />
+                            <div class="date"><span>10</span>January</div>
+                        </div>
+                        <div class="flex-column cont">
+                            <div class="cont-hover">
+                                <div class="title">Wedding Ceremony</div>
+                                <p>St. Mary's Knanaya Church Mamangalam, Palarivattom, Ernakulam</p>
+                                <div class="time"> <i class="fa-regular fa-clock"></i> 11:00 am to 12:30 pm</div>
+                                <a href="https://www.google.com/maps?q=St.+Mary%27s+Knanaya+Church+Mamangalam+Palarivattom+Ernakulam+Kerala"
+                                    target="_blank" rel="noopener" class="map-link">
+                                    <i class="fa-solid fa-location-dot"></i> View on Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item box-shadow-extra-large">
+                        <div class="img"> <img src="img/whenwhere/whenwhere3.jpg" class="img-fluid" alt="" />
+                            <div class="date"><span>10</span>January</div>
+                        </div>
+                        <div class="flex-column cont">
+                            <div class="cont-hover">
+                                <div class="title">Reception</div>
+                                <p>St. George Jacobite Syrian Cathedral Parish Hall Karingachira, Ernakulam</p>
+                                <div class="time"> <i class="fa-regular fa-clock"></i> 01:00 pm onwards</div>
+                                <a href="https://www.google.com/maps?q=St.+George+Jacobite+Syrian+Cathedral+Karingachira+Ernakulam+Kerala"
+                                    target="_blank" rel="noopener" class="map-link">
+                                    <i class="fa-solid fa-location-dot"></i> View on Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Image -->
+    <section id="gallery" data-scroll-index="4" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">Our Gallery</div>
+                    <div class="section-title">Captured Moments</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12 mb-25">
+                    <div class="item">
+                        <a href="img/gallery/36.2.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
+                            <div class="img"> <img src="img/gallery/36.2.jpg" class="img-fluid mx-auto d-block" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-25">
+                    <div class="item">
+                        <a href="img/gallery/58.jpeg" title="" class="gallery-masonry-item-img-link img-zoom">
+                            <div class="img"> <img src="img/gallery/58.jpeg" class="img-fluid mx-auto d-block" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-25">
+                    <div class="item">
+                        <a href="img/gallery/27.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
+                            <div class="img"> <img src="img/gallery/27.jpg" class="img-fluid mx-auto d-block" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-lg-3 col-md-12 mb-25">
+                    <div class="item">
+                        <a href="img/gallery/11.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
+                            <div class="img"> <img src="img/gallery/11.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-25">
+                    <div class="item">
+                        <a href="img/gallery/7.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
+                            <div class="img"> <img src="img/gallery/7.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-25">
+                    <div class="item">
+                        <a href="img/gallery/10.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
+                            <div class="img"> <img src="img/gallery/10.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Banner -->
+    <!-- <section id="rsvp" data-scroll-index="7" class="section-padding bg-img bg-fixed" data-overlay-dark="3" data-background="img/slider/slider1.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="form2-sidebar">
+                        <form class="contact__form form2" method="post" action="#">
+                            <div class="head">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-auto">
+                                        <h5>R.S.V.P</h5>
+                                    </div>
+                                    <div class="col-auto"><a href="tel:00000000000" class="ripple-icon"><i class="fa-solid fa-phone"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                            Your message was sent successfully.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" placeholder="Your email address" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <select class="form-select">
+                                            <option hidden="" disabled="disabled" selected="selected">Number of guests</option>
+                                            <option>One</option>
+                                            <option>Two</option>
+                                            <option>Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <select class="form-select">
+                                            <option hidden="" disabled="disabled" selected="selected">Will you attend?</option>
+                                            <option>All</option>
+                                            <option>Wedding Ceremony</option>
+                                            <option>Wedding Party</option>
+                                            <option>Accomodations</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <textarea name="message" id="message" cols="20" rows="3" placeholder="Your message"></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit"><i class="fa-light fa-paper-plane"></i> Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div class="section-separator">
+        <span class="sep-line"></span>
+        <i class="fa-solid fa-gem"></i>
+        <span class="sep-line"></span>
+    </div>
+
+    <!-- Clients -->
+    <section class="clients section-padding">
+        <div class="container">
+            <div class="row wrap">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="#"><img src="img/gift/11.jpeg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/gift/12.jpeg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/gift/13.jpeg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/gift/14.jpeg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/gift/15.jpeg" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="img/gift/16.jpeg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <!-- <div class="insta">
+        <div class="container">
+            <div class="item">
+                <div class="img mr-10">
+                    <a href="#0"> <img src="img/insta/insta1.jpg" class="rounded-2" alt=""> </a> <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="img mr-10">
+                    <a href="#0"> <img src="img/insta/insta2.jpg" class="rounded-2" alt=""> </a> <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="img mr-10">
+                    <a href="#0"> <img src="img/insta/insta3.jpg" class="rounded-2" alt=""> </a> <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="img mr-10">
+                    <a href="#0"> <img src="img/insta/insta4.jpg" class="rounded-2" alt=""> </a> <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="img">
+                    <a href="#0"> <img src="img/insta/insta5.jpg" class="rounded-2" alt=""> </a> <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="follow">
+                    <a href="#0" class="text-bg"> <span><i class="fa-brands fa-instagram"></i> / EvelynEnrico</span></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer bg-lightbrown">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 text-center">
+                    <div class="item">
+                        <h5>We are getting married!</h5>
+                        <ul class="marriage">
+                            <li>Abin</li>
+                            <li class="circle">&amp;</li>
+                            <li>Soya</li>
+                        </ul>
+                        <div class="date">10 January 2026</div>
+                        <div class="address">11:00 am at St. Mary's Knanaya Church
+                            <br>Mamangalam, Ernakulam
+                        </div>
+                        <p class="mt-30 mb-0"><small>Designed by The Wed Cloud</small></p>
+                        <p><a href="https://wa.me/916238203315"><small>
+                                    <i class="fa-brands fa-whatsapp"></i> +91 6238203315
+                                </small></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+<!-- Mirrored from duruthemes.com/demo/html/ewed/wedding/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 May 2026 15:11:52 GMT -->
+
+</html>
