@@ -88,8 +88,9 @@ $(function () {
             , loop: true
             , dots: true
             , margin: 0
-            , autoplay: false
+            , autoplay: true
             , autoplayTimeout: 5000
+            , autoplayHoverPause: true
             , nav: true
             , navText: ['<i class="fa-light fa-angle-left" aria-hidden="true"></i>', '<i class="fa-light fa-angle-right" aria-hidden="true"></i>']
             , responsiveClass: true
@@ -110,8 +111,9 @@ $(function () {
             , loop: true
             , dots: true
             , margin: 0
-            , autoplay: false
+            , autoplay: true
             , autoplayTimeout: 5000
+            , autoplayHoverPause: true
             , animateOut: 'fadeOut'
             , nav: true
             , navText: ['<i class="fa-light fa-angle-left" aria-hidden="true"></i>', '<i class="fa-light fa-angle-right" aria-hidden="true"></i>']
