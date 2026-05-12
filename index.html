@@ -32,8 +32,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="The Wed Cloud">
 
-    <meta property="og:title"
-        content="Abin & Soya Wedding Invitation">
+    <meta property="og:title" content="Abin & Soya Wedding Invitation">
 
     <meta property="og:description"
         content="We can't wait to celebrate our special day with you. Tap to view the wedding details!">
@@ -41,11 +40,9 @@
     <meta property="og:url" content="https://abinandsoyaa.thewedcloud.com/">
 
     <!-- IMPORTANT -->
-    <meta property="og:image"
-        content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
+    <meta property="og:image" content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
 
-    <meta property="og:image:secure_url"
-        content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
+    <meta property="og:image:secure_url" content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
 
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="1200">
@@ -54,14 +51,12 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title"
-    content="Abin & Soya Wedding Invitation">
+    <meta name="twitter:title" content="Abin & Soya Wedding Invitation">
 
     <meta name="twitter:description"
-    content="We can't wait to celebrate our special day with you. Tap to view the wedding details!">
+        content="We can't wait to celebrate our special day with you. Tap to view the wedding details!">
 
-    <meta name="twitter:image"
-        content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
+    <meta name="twitter:image" content="https://abinandsoyaa.thewedcloud.com/img/cover.jpg">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -79,109 +74,109 @@
 
 </head>
 <style>
-        .navbar {
-            transition: opacity 0.35s ease, transform 0.35s ease;
+    .navbar {
+        transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    /* ── Hero slider: gradient shade so text is always readable ── */
+    .header.slider-fade .item.bg-img::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        /* dark gradient strongest at centre where text sits */
+        background: radial-gradient(ellipse at 50% 55%,
+                rgba(44, 42, 42, 0.55) 0%,
+                rgba(56, 54, 54, 0.25) 60%,
+                rgba(73, 69, 69, 0.1) 100%);
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /* Make sure caption sits above the gradient layer */
+    .header.slider-fade .item .v-middle.caption {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Text shadow on all heading / paragraph text inside the slides */
+    .header.slider-fade .item .caption h6,
+    .header.slider-fade .item .caption h1,
+    .header.slider-fade .item .caption p,
+    .header.slider-fade .item .caption .date {
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.70), 0 1px 3px rgba(0, 0, 0, 0.50);
+    }
+
+    /* ── Section Separator ── */
+    .section-separator {
+        padding: 0 0 30px 0;
+        margin-top: -40px;
+        text-align: center;
+        opacity: 0.6;
+    }
+
+    .section-separator .sep-line {
+        height: 1px;
+        width: 100px;
+        display: inline-block;
+        background: linear-gradient(to right, transparent, #c8a97e, transparent);
+        vertical-align: middle;
+    }
+
+    .section-separator i {
+        color: #c8a97e;
+        margin: 0 15px;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    /* Map link button in When & Where */
+    .map-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 12px;
+        padding: 7px 14px;
+        background: linear-gradient(135deg, #c8a97e, #a07850);
+        color: #fff !important;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        text-decoration: none !important;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        box-shadow: 0 4px 14px rgba(160, 120, 80, 0.35);
+        cursor: pointer;
+    }
+
+    .map-link i {
+        font-size: 13px;
+        animation: pinBounce 1.6s ease-in-out infinite;
+    }
+
+    .map-link:hover {
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 22px rgba(160, 120, 80, 0.55);
+        background: linear-gradient(135deg, #a07850, #7a5a30);
+        color: #fff !important;
+    }
+
+    @keyframes pinBounce {
+
+        0%,
+        100% {
+            transform: translateY(0);
         }
 
-        /* ── Hero slider: gradient shade so text is always readable ── */
-        .header.slider-fade .item.bg-img::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            /* dark gradient strongest at centre where text sits */
-            background: radial-gradient(ellipse at 50% 55%,
-                    rgba(44, 42, 42, 0.55) 0%,
-                    rgba(56, 54, 54, 0.25) 60%,
-                    rgba(73, 69, 69, 0.1) 100%);
-            pointer-events: none;
-            z-index: 1;
+        40% {
+            transform: translateY(-4px);
         }
 
-        /* Make sure caption sits above the gradient layer */
-        .header.slider-fade .item .v-middle.caption {
-            position: relative;
-            z-index: 2;
+        70% {
+            transform: translateY(-2px);
         }
-
-        /* Text shadow on all heading / paragraph text inside the slides */
-        .header.slider-fade .item .caption h6,
-        .header.slider-fade .item .caption h1,
-        .header.slider-fade .item .caption p,
-        .header.slider-fade .item .caption .date {
-            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.70), 0 1px 3px rgba(0, 0, 0, 0.50);
-        }
-
-        /* ── Section Separator ── */
-        .section-separator {
-            padding: 0 0 30px 0;
-            margin-top: -40px;
-            text-align: center;
-            opacity: 0.6;
-        }
-
-        .section-separator .sep-line {
-            height: 1px;
-            width: 100px;
-            display: inline-block;
-            background: linear-gradient(to right, transparent, #c8a97e, transparent);
-            vertical-align: middle;
-        }
-
-        .section-separator i {
-            color: #c8a97e;
-            margin: 0 15px;
-            font-size: 12px;
-            vertical-align: middle;
-        }
-
-        /* Map link button in When & Where */
-        .map-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 12px;
-            padding: 7px 14px;
-            background: linear-gradient(135deg, #c8a97e, #a07850);
-            color: #fff !important;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            border-radius: 30px;
-            text-decoration: none !important;
-            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-            box-shadow: 0 4px 14px rgba(160, 120, 80, 0.35);
-            cursor: pointer;
-        }
-
-        .map-link i {
-            font-size: 13px;
-            animation: pinBounce 1.6s ease-in-out infinite;
-        }
-
-        .map-link:hover {
-            transform: translateY(-2px) scale(1.04);
-            box-shadow: 0 8px 22px rgba(160, 120, 80, 0.55);
-            background: linear-gradient(135deg, #a07850, #7a5a30);
-            color: #fff !important;
-        }
-
-        @keyframes pinBounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-4px);
-            }
-
-            70% {
-                transform: translateY(-2px);
-            }
-        }
-    </style>
+    }
+</style>
 
 <body>
     <!-- Preloader -->
@@ -234,7 +229,7 @@
     <header id="home" data-scroll-index="0" class="header slider-fade">
         <div class="owl-carousel owl-theme">
             <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/39.jpeg">
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/18.1.jpeg">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -274,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/18.1.jpeg">
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/gallery/39.jpeg">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -338,7 +333,8 @@
                     <div class="row justify-content-center">
                         <div class="col-md-7 text-center mt-30">
                             <p>Today and always, beyond tomorrow, I need you beside me, always as my best friend,
-                                <span>lover and forever soul mate</span>.</p>
+                                <span>lover and forever soul mate</span>.
+                            </p>
                         </div>
                     </div>
                 </div>
